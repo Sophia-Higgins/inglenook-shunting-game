@@ -3,7 +3,7 @@ import {
   findEngine,
   getPanelsToCouple,
   getPanelsToUncouple,
-} from 'src/libs/truckCoupling.js'
+} from '../../libs/truckCoupling.js'
 import { expect, test } from 'vitest'
 
 // describe findEngine

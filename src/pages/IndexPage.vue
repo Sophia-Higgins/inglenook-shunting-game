@@ -22,13 +22,13 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
-import { getTracks } from 'src/libs/createTracks'
-import { findCoupledItems, getItemsToSwapLeft, getItemsToSwapRight } from 'src/libs/movePanels'
-import { findEngine, getPanelsToCouple, getPanelsToUncouple } from 'src/libs/truckCoupling'
-import ResultComponent from 'components/ResultComponent.vue'
-import TracksComponent from 'components/TracksComponent.vue'
-import ButtonsComponent from 'components/ButtonsComponent.vue'
-import RulesComponent from 'src/components/RulesComponent.vue'
+import { getTracks } from '../libs/createTracks.js'
+import { findCoupledItems, getItemsToSwapLeft, getItemsToSwapRight } from '../libs/movePanels.js'
+import { findEngine, getPanelsToCouple, getPanelsToUncouple } from '../libs/truckCoupling.js'
+import ResultComponent from '../components/ResultComponent.vue'
+import TracksComponent from '../components/TracksComponent.vue'
+import ButtonsComponent from '../components/ButtonsComponent.vue'
+import RulesComponent from '../components/RulesComponent.vue'
 
 const tracks = ref([])
 const disableButtons = ref(false)

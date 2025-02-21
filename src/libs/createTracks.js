@@ -1,4 +1,4 @@
-import { panel } from 'src/models/models'
+import { panel } from '../models/models.js'
 
 export const createTrack0 = () => {
   const panelArray = []

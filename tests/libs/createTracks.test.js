@@ -1,4 +1,4 @@
-import { createTrack0, createtrack1, createTrack2 } from 'src/libs/createTracks.js'
+import { createTrack0, createtrack1, createTrack2 } from '../../libs/createTracks.js'
 import { expect, test } from 'vitest'
 
 test('creates correct number of panels in top track', () => {

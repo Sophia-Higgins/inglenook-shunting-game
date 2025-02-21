@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import { truckArray } from 'src/models/models'
+import { truckArray } from '../models/models.js'
 
 const randomiseTruckArray = truckArray.sort(() => Math.random() - 0.5)
 

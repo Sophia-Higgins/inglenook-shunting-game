@@ -1,4 +1,4 @@
-import { findCoupledItems, getItemsToSwapLeft, getItemsToSwapRight } from 'src/libs/movePanels.js'
+import { findCoupledItems, getItemsToSwapLeft, getItemsToSwapRight } from '../../libs/movePanels.js'
 import { expect, test } from 'vitest'
 
 // describe findCoupledItems
