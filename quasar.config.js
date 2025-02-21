@@ -54,7 +54,7 @@ export default defineConfig((/* ctx */) => {
       // distDir
 
       extendViteConf(viteConf) {
-        viteConf.base = '/inglenook-shunting-game/dist'
+        viteConf.base = '/inglenook-shunting-game/'
       },
       // viteVuePluginOptions: {},
 
