@@ -16,6 +16,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: 'dist'
+          folder: 'dist/spa'
           clean: true
           ssh-key: ${{ secrets.DEPLOY_KEY }}

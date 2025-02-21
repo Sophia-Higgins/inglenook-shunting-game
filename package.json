@@ -12,7 +12,7 @@
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "vitest",
     "dev": "quasar dev",
-    "build": "vite build",
+    "build": "quasar build",
     "postinstall": "quasar prepare"
   },
   "dependencies": {

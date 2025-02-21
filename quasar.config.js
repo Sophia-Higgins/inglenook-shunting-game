@@ -44,7 +44,7 @@ export default defineConfig((/* ctx */) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/',
+      // publicPath: '/',
       // analyze: true,
       // env: {},
       // rawDefine: {}
@@ -54,7 +54,7 @@ export default defineConfig((/* ctx */) => {
       // distDir
 
       extendViteConf(viteConf) {
-        viteConf.base = '/inglenook-shunting-game/'
+        viteConf.base = '/inglenook-shunting-game/dist'
       },
       // viteVuePluginOptions: {},
 
