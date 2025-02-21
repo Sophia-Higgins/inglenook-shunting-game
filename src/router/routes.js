@@ -1,15 +1,19 @@
+import IndexPage from '../pages/IndexPage.vue'
+import ErrorNotFound from '../pages/ErrorNotFound.vue'
+import MainLayout from '../layouts/MainLayout.vue'
+
 const routes = [
   {
     path: '/',
-    component: () => import('../layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('../pages/IndexPage.vue') }],
+    component: () => MainLayout,
+    children: [{ path: '', component: () => IndexPage }],
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => import('../pages/ErrorNotFound.vue'),
+    component: () => ErrorNotFound,
   },
 ]
 
