@@ -1,5 +1,5 @@
 <template>
-  <div class="q-ma-lg row q-px-auto">
+  <div class="q-mx-lg q-mt-lg row justify-center">
     <p
       v-for="(item, index) in topRow"
       :key="index"
@@ -9,7 +9,7 @@
       {{ item }}
     </p>
   </div>
-  <div class="q-ma-lg row">
+  <div class="q-mx-lg row justify-center">
     <p
       v-for="(item, index) in bottomRow"
       :key="index"
@@ -18,6 +18,8 @@
     >
       {{ item }}
     </p>
+    <div class="flex q-mx-sm justify-center items-center" style="height: 50px; width: 50px" />
+    <div class="flex q-mx-sm justify-center items-center" style="height: 50px; width: 50px" />
   </div>
 </template>
 
