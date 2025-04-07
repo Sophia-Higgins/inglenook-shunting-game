@@ -1,5 +1,5 @@
 <template>
-  <div class="q-ma-lg row">
+  <div class="q-ma-lg row q-px-auto">
     <p
       v-for="(item, index) in topRow"
       :key="index"

@@ -1,8 +1,8 @@
 <template>
   <q-page class="row">
     <q-card style="width: 80vw" class="q-mx-auto">
-      <ResultComponent />
       <RulesComponent />
+      <ResultComponent />
       <TracksComponent
         :tracks="tracks"
         :disable-buttons="disableButtons"
@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import { getTracks } from '../libs/createTracks.js'
 import { findCoupledItems, getItemsToSwapLeft, getItemsToSwapRight } from '../libs/movePanels.js'
 import { findEngine, getPanelsToCouple, getPanelsToUncouple } from '../libs/truckCoupling.js'
@@ -34,9 +34,11 @@ const tracks = ref([])
 const disableButtons = ref(false)
 const selectedTrack = ref('track0')
 
-onMounted(() => {
-  tracks.value = getTracks()
-})
+tracks.value = getTracks()
+
+// onMounted(() => {
+//   window.addEventListener('keydown', handleKeyDown)
+// })
 
 const reset = () => {
   tracks.value = getTracks()
