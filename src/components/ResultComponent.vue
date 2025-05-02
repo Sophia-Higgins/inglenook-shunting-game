@@ -1,7 +1,7 @@
 <template>
   <div class="q-mx-lg q-mt-lg row justify-center">
     <p
-      v-for="(item, index) in topRow"
+      v-for="(item, index) in props.topRow"
       :key="index"
       class="flex bg-deep-purple-4 q-mx-sm justify-center items-center"
       style="height: 50px; width: 50px"
@@ -11,7 +11,7 @@
   </div>
   <div class="q-mx-lg row justify-center">
     <p
-      v-for="(item, index) in bottomRow"
+      v-for="(item, index) in props.bottomRow"
       :key="index"
       class="flex bg-deep-purple-4 q-mx-sm justify-center items-center"
       style="height: 50px; width: 50px"
@@ -24,10 +24,12 @@
 </template>
 
 <script setup>
-import { truckArray } from '../models/models.js'
-
-const randomiseTruckArray = truckArray.sort(() => Math.random() - 0.5)
-
-const topRow = randomiseTruckArray.slice(0, 5)
-const bottomRow = randomiseTruckArray.slice(5, 8)
+const props = defineProps({
+  topRow: {
+    type: Array,
+  },
+  bottomRow: {
+    type: Array,
+  },
+})
 </script>

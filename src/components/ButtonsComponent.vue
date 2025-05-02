@@ -6,7 +6,9 @@
     <q-btn color="purple" @click="emit('moveCoupledItemsRight')" :disable="props.disableButtons">
       Right
     </q-btn>
-    <q-btn color="purple" @click="emit('reset')" :disable="props.disableButtons"> Reset </q-btn>
+    <q-btn color="purple" @click="emit('reset')" :disable="props.disableButtons">
+      Reset tracks
+    </q-btn>
   </div>
 </template>
 
